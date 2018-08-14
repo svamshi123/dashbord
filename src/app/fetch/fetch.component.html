@@ -1,0 +1,17 @@
+
+<div style="text-align:left;width:500px;">
+    <table *ngIf="arrBirds">
+        <tr>
+                <th>Name</th>
+                    <th>mail</th>
+                    <th>Dob</th>
+        </tr>
+
+      
+        <tr *ngFor="let bird of arrBirds">
+            <td>{{bird.Name}}</td>
+                <td>{{bird.email}}</td>
+                    <td>{{bird.dob}}</td>
+        </tr>
+    </table>
+</div>
